@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6668,7 +6669,11 @@ body {
   }
 }
 .container {
+  font-family: 'Fjalla One', sans-serif;
   color: #111;
+}
+.container p {
+  line-height: 30px;
 }
 .navbar-inverse {
   background-color: #464b4c;
