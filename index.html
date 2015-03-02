@@ -34,8 +34,8 @@
             <a class="navbar-brand" href="#">YANUCCI ELECTRICAL SERVICES</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#services" class="active">SERVICES</a></li>
+            <ul class="nav navbar-nav" id="nav">
+                <li><a href="#services">SERVICES</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -92,7 +92,9 @@
     </a>
 </div><!-- /.carousel -->
 
-<div class="container">
+<!-- Services
+================================================== -->
+<div class="container services" id="services">
     <div class="row">
         <div class="col-md-12 text-center">
             <h1 class="text-uppercase">Services</h1>
@@ -117,12 +119,15 @@
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
     </div>
-</div>
+</div><!-- /.services -->
 
-<div class="row wire-bg">
+
+<!-- About
+================================================== -->
+<div class="row wire-bg about" id="about">
     <div class="col-md-12 text-center">
-        <h1 class="text-uppercase">Services</h1>
-        <p class="hr five-percent" />
+        <h1 class="text-uppercase">Who We Are</h1>
+        <p class="hr five-percent white" />
     </div>
     <div class="container">
         <div class="col-md-12 text-center">
@@ -131,9 +136,12 @@
             </p>
         </div>
     </div>
-</div>
+</div><!-- /.about -->
 
-<div class="row">
+
+<!-- Contact
+================================================== -->
+<div class="row contact" id="contact">
     <div class="container">
         <div class="col-md-12 text-center">
             <h1 class="text-uppercase">Contact</h1>
@@ -141,14 +149,76 @@
         </div>
 
         <div class="col-md-6 text-center">
-            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+            <form class="form-horizontal" method="post">
+                <div class="form-group">
+                    <label for="name" class="col-xs-2 control-label">Name</label>
+                    <div class="col-xs-10">
+                        <input id="name" name="name" type="text" placeholder="Name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-xs-2 control-label">Email</label>
+                    <div class="col-xs-10">
+                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="col-xs-2 control-label">Phone</label>
+                    <div class="col-xs-10">
+                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="col-xs-2 control-label">Message</label>
+                    <div class="col-xs-10">
+                        <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-2 text-left"></div>
+                    <div class="col-xs-10 text-left">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </div>
+            </form>
         </div>
 
-        <div class="col-md-6 text-center">
-            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5 text-left">
+            <p class="h2 text-uppercase" style="margin-top:0;">Let's get in touch</p>
+            <p>Feel free to contact us with any questions or to schedule your next project</p>
+            <p class="yes-orange">24 HOUR EMERGENCY SERVICE</p>
+
+            <p class="text-uppercase h4">CONTACT DETAILS</p>
+
+            <div class="col-xs-1 text-left">
+                <span class="glyphicon glyphicon-map-marker yes-orange"></span>
+            </div>
+            <div class="col-xs-11 text-left">
+                <address>
+                    P.O. Box 638<br />
+                    Shoreham, NY 11786
+                </address>
+            </div>
+
+            <div class="col-xs-1 text-left">
+                <span class="glyphicon glyphicon-envelope yes-orange"></span>
+            </div>
+            <div class="col-xs-11 text-left">
+                INFO@YESELECTRICALINC.COM
+            </div>
+
+            <div class="col-xs-1 text-left">
+                <span class="glyphicon glyphicon-earphone yes-orange"></span>
+            </div>
+            <div class="col-xs-11 text-left">
+                631 258-7324<br />
+                631 228-8040
+            </div>
         </div>
     </div>
-</div>
+</div><!-- /.contact -->
 
     <hr>
 
@@ -165,6 +235,10 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav').onePageNav();
+    });
+</script>
 </body>
 </html>
