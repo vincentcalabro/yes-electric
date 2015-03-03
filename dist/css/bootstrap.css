@@ -6726,10 +6726,10 @@ body p {
   border-color: #fff;
 }
 .section {
-  padding: 70px 0;
+  padding: 60px 0;
 }
 .short-section {
-  padding: 35px 0;
+  padding: 30px 0;
 }
 .about.wire-bg {
   color: #fff;
@@ -6743,6 +6743,9 @@ body p {
 }
 .yes-orange {
   color: #df8b27;
+}
+.contact .form-control {
+  background-color: #ebebeb;
 }
 .social {
   color: #fff;
