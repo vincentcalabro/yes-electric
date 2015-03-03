@@ -6587,11 +6587,17 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 50px;
+  top: 20%;
   z-index: 10;
 }
+.carousel-caption img {
+  width: 100%;
+}
 .carousel-caption.caption-h30 {
-  bottom: 130px;
+  top: 30%;
+}
+img.yes-logo {
+  max-width: 427px;
 }
 .carousel-indicators {
   bottom: 20px;
@@ -6703,6 +6709,11 @@ body p {
   background-color: #555;
   border-radius: 50%;
 }
+.glyphicon.circle.circle-40 {
+  width: 40px;
+  height: 40px;
+  line-height: 39px;
+}
 .hr {
   width: 15%;
   margin: 40px auto;
@@ -6714,20 +6725,38 @@ body p {
 .hr.white {
   border-color: #fff;
 }
-.row {
+.section {
   padding: 70px 0;
 }
-.row.wire-bg {
+.short-section {
+  padding: 35px 0;
+}
+.about.wire-bg {
   color: #fff;
   background-image: url(/img/wire-bg.jpg);
   background-position: 100%;
   -webkit-background-size: cover;
           background-size: cover;
 }
-.row.wire-bg .container {
+.about.wire-bg .container {
   color: #fff;
 }
 .yes-orange {
   color: #df8b27;
+}
+.social {
+  color: #fff;
+  background-color: #555;
+}
+.social .glyphicon-chevron-up {
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  margin-left: -20px;
+  color: #000;
+  background-color: #df8b27;
+}
+.social i.fa {
+  padding: 10px 10px 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */
