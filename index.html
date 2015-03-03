@@ -284,7 +284,8 @@
             var aTag = $("#" + aid);
             $('html,body').animate({scrollTop: aTag.offset().top},'slow');
         }
-        $("a.scrollTo").click(function() {
+        $("a.scrollTo").click(function(e) {
+            e.preventDefault();
             var href = $(this).attr('href').replace('#', '')
             scrollToAnchor(href);
         });
