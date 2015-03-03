@@ -6694,6 +6694,9 @@ body p {
 .navbar-inverse .navbar-nav > li > a.active {
   background-color: #3c4041;
 }
+.h1 {
+  font-weight: bold;
+}
 .glyphicon.glyph-4x {
   font-size: 40px;
 }
@@ -6717,7 +6720,7 @@ body p {
 .hr {
   width: 15%;
   margin: 40px auto;
-  border-bottom: solid 3px #df8b27;
+  border-bottom: solid 2px #df8b27;
 }
 .hr.five-percent {
   width: 5%;
