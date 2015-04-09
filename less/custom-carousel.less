@@ -37,22 +37,33 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+.flex {
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21+ */
+  display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+  -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+  -ms-flex-align: center; /* You know the drill now… */
+  -webkit-align-items: center;
+  align-items: center;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Carousel base class */
 .carousel {
     height: 568px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    z-index: 10;
-    top: 20%;
+
+  height: 568px;
 
   img {
     width: 100%;
   }
-}
-
-.carousel-caption.caption-h30 {
-  top: 30%;
 }
 
 img.yes-logo {
