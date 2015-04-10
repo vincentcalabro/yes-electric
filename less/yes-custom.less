@@ -1,13 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Oswald|Lato);
 
 body {
   color: #111111;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
   p {
     line-height: 30px;
   }
+}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,.navbar {
+  font-family: 'Oswald', sans-serif;
 }
 .navbar-inverse {
   background-color: #464b4c;
@@ -30,20 +33,24 @@ body {
   font-weight: bold;
 }
 
-.glyphicon.glyph-4x {
+.nowrap-desktop {
+  white-space: nowrap;
+}
+
+.glyphicon.glyph-4x, .fa.fa-4x {
   font-size: 40px;
 }
-.glyphicon.glyph-5x {
+.glyphicon.glyph-5x, .fa.fa-5x {
   font-size: 50px;
 }
 
-.glyphicon.circle {
+.glyphicon.circle, .fa.circle {
   margin: 20px;
-  line-height: 99px;
+  line-height: 119px;
   color: #ffffff;
   background-color: #555555;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -110,5 +117,11 @@ body {
 
   i.fa {
     padding: 10px 10px 0;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .nowrap-desktop {
+    white-space: normal;
   }
 }

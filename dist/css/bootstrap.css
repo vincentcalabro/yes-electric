@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Oswald|Lato);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6631,6 +6631,7 @@ img.yes-logo {
   top: 0;
   left: 0;
   min-width: 100%;
+  max-width: none;
   height: 568px;
 }
 /* MARKETING CONTENT
@@ -6694,7 +6695,7 @@ img.yes-logo {
   }
 }
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #111;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
 
@@ -6702,6 +6703,21 @@ body {
 }
 body p {
   line-height: 30px;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.navbar {
+  font-family: 'Oswald', sans-serif;
 }
 .navbar-inverse {
   background-color: #464b4c;
@@ -6719,22 +6735,29 @@ body p {
 .h1 {
   font-weight: bold;
 }
-.glyphicon.glyph-4x {
+.nowrap-desktop {
+  white-space: nowrap;
+}
+.glyphicon.glyph-4x,
+.fa.fa-4x {
   font-size: 40px;
 }
-.glyphicon.glyph-5x {
+.glyphicon.glyph-5x,
+.fa.fa-5x {
   font-size: 50px;
 }
-.glyphicon.circle {
-  width: 100px;
-  height: 100px;
+.glyphicon.circle,
+.fa.circle {
+  width: 120px;
+  height: 120px;
   margin: 20px;
-  line-height: 99px;
+  line-height: 119px;
   color: #fff;
   background-color: #555;
   border-radius: 50%;
 }
-.glyphicon.circle.circle-40 {
+.glyphicon.circle.circle-40,
+.fa.circle.circle-40 {
   width: 40px;
   height: 40px;
   line-height: 39px;
@@ -6786,5 +6809,10 @@ body p {
 }
 .social i.fa {
   padding: 10px 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .nowrap-desktop {
+    white-space: normal;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
